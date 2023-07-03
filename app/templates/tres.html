@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}tres{% endblock %}
+
+{% block content %}
+<h1>DSM 3b are greath</h1>
+<ul>alumnos del grupo
+    {% for alumno in alumnos %}
+    <li>{{ alumno }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
